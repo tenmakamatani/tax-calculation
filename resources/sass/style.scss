@@ -1,0 +1,132 @@
+%title_css {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+
+$form_height: 30px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+input {
+  outline: none;
+  font-size: 100%;
+  text-align: center;
+  border: solid 1px darkgrey;
+}
+.taxes {
+  width: 100%;
+  margin-bottom: 30px;
+  &__ttl {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    @extend %title_css;
+  }
+  &__detail {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 80%;
+    &__element {
+      width: 33.3%;
+      border: solid 1px darkgrey;
+      height: 50px;
+      text-align: center;
+      vertical-align: middle;
+      &__head {
+        line-height: 50px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+.register {
+  width: 100%;
+  margin-bottom: 30px;
+  &__ttl {
+    margin-bottom: 30px;
+    @extend %title_css;
+  }
+  &__form-container {
+    width: 100%;
+    display: inline-block;
+    &__form {
+      margin: 0 auto;
+      max-width: 80%;
+      &--date {
+        width: 33%;
+        height: $form_height;
+        margin-left: 6%;
+        margin-right: 6%;
+      }
+      &--percentage {
+        width: 20%;
+        height: $form_height;
+      }
+      &--percent-chara {
+        width: 5%;
+        font-size: 20px;
+      }
+      &--button {
+        margin-left: 10%;
+        width: 10%;
+        height: $form_height;
+        font-size: 15px;
+      }
+    }
+  }
+}
+.calculate {
+  width: 100%;
+  &__ttl {
+    margin-bottom: 30px;
+    @extend %title_css;
+  }
+  &__form-container {
+    width: 100%;
+    display: inline-block;
+    &__form {
+      margin: 0 auto;
+      max-width: 80%;
+      &--date {
+        width: 33%;
+        height: $form_height;
+        margin-left: 6%;
+        margin-right: 6%;
+      }
+      &--percentage {
+        width: 20%;
+        height: $form_height;
+      }
+      &--percent-chara {
+        width: 5%;
+        font-size: 20px;
+      }
+      &--button {
+        margin-left: 10%;
+        width: 10%;
+        height: $form_height;
+        font-size: 15px;
+      }
+    }
+  }
+  &__result-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &__result {
+      width: 16.2%;
+      margin-left: 46.7%;
+      border: solid 1px darkgrey;
+      text-align: center;
+      vertical-align: middle;
+      height: $form_height;
+      &__inner {
+        line-height: $form_height;
+      }
+    }
+  }
+}

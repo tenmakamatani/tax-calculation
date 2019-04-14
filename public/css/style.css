@@ -1,0 +1,155 @@
+.calculate__ttl,
+.register__ttl,
+.taxes__ttl {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+  font-size: 100%;
+  text-align: center;
+  border: solid 1px darkgrey;
+}
+
+.taxes {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.taxes__ttl {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.taxes__detail {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.taxes__detail__element {
+  width: 33.3%;
+  border: solid 1px darkgrey;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.taxes__detail__element__head {
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.register {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.register__ttl {
+  margin-bottom: 30px;
+}
+
+.register__form-container {
+  width: 100%;
+  display: inline-block;
+}
+
+.register__form-container__form {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.register__form-container__form--date {
+  width: 33%;
+  height: 30px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.register__form-container__form--percentage {
+  width: 20%;
+  height: 30px;
+}
+
+.register__form-container__form--percent-chara {
+  width: 5%;
+  font-size: 20px;
+}
+
+.register__form-container__form--button {
+  margin-left: 10%;
+  width: 10%;
+  height: 30px;
+  font-size: 15px;
+}
+
+.calculate {
+  width: 100%;
+}
+
+.calculate__ttl {
+  margin-bottom: 30px;
+}
+
+.calculate__form-container {
+  width: 100%;
+  display: inline-block;
+}
+
+.calculate__form-container__form {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.calculate__form-container__form--date {
+  width: 33%;
+  height: 30px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.calculate__form-container__form--percentage {
+  width: 20%;
+  height: 30px;
+}
+
+.calculate__form-container__form--percent-chara {
+  width: 5%;
+  font-size: 20px;
+}
+
+.calculate__form-container__form--button {
+  margin-left: 10%;
+  width: 10%;
+  height: 30px;
+  font-size: 15px;
+}
+
+.calculate__result-container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.calculate__result-container__result {
+  width: 16.2%;
+  margin-left: 46.7%;
+  border: solid 1px darkgrey;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+}
+
+.calculate__result-container__result__inner {
+  line-height: 30px;
+}
+
