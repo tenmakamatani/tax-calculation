@@ -48,6 +48,12 @@ input {
   font-size: 20px;
 }
 
+.taxes__detail__element__button {
+  width: 30%;
+  height: 25px;
+  margin-top: 12.5px;
+}
+
 .register {
   width: 100%;
   margin-bottom: 30px;

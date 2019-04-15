@@ -21,6 +21,22 @@
         <p class="taxes__detail__element__head">操作</p>
       </div>
     </div>
+    @foreach ($taxes as $tax)
+      <div class="taxes__detail">
+        <div class="taxes__detail__element">
+          <p class="taxes__detail__element__head">{{$tax->date}}</p>
+        </div>
+        <div class="taxes__detail__element">
+          <p class="taxes__detail__element__head">{{$tax->percent}}</p>
+        </div>
+        <div class="taxes__detail__element">
+          <form action="/delete/<?php echo $tax->id; ?>" method="POST">
+            {{ csrf_field() }}
+            <button type="submit" class="taxes__detail__element__button">削除</button>
+          </form>
+        </div>
+      </div>
+    @endforeach
   </section>
   <section class="register">
     <h1 class="register__ttl">消費税設定の新規登録</h1>
@@ -59,6 +75,11 @@
       @endforeach
     </ul>
   @endif
-  <h1>{{ $msg }}</h1>
+  <script type="text/javascript">
+    const inputItem = document.getElementsByTagName("input");
+    for (var i=0; i<inputItem.length; i++){
+      inputItem[i].autocomplete = "off";
+    }
+  </script>
 </body>
 </html>

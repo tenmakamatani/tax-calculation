@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index', [
-        'msg' => 'aiueo'
-    ]);
-});
+Route::get('/', 'TaxController@index');
 Route::post('/create', 'TaxController@create');
+Route::post('/delete/{id}', 'TaxController@delete');
