@@ -16,11 +16,18 @@ class TaxController extends Controller
     }
 
     public function create(TaxCreateRequest $req) {
-        $tax = new Tax;
-        $tax->date = $req->date;
-        $tax->percent = $req->percent;
-        $tax->save();
-        return redirect('/');
+        $item = Tax::where('date', $req->date)->first();
+        if ($item != null) {
+            $item->percent = $req->percent;
+            $item->save();
+            return redirect('/');
+        } else {
+            $tax = new Tax;
+            $tax->date = $req->date;
+            $tax->percent = $req->percent;
+            $tax->save();
+            return redirect('/');
+        }
     }
 
     public function delete($id) {
