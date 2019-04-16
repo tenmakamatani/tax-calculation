@@ -12,5 +12,6 @@
 */
 
 Route::get('/', 'TaxController@index');
+Route::post('/', 'TaxController@calculate');
 Route::post('/create', 'TaxController@create');
 Route::post('/delete/{id}', 'TaxController@delete');
