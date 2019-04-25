@@ -1,1 +1,1 @@
-web: php artisan serve
+web: vendor/bin/tax-calculation public/
