@@ -1,1 +1,1 @@
-web: vendor/bin/tax-calculation/public/
+web: php artisan migrate
