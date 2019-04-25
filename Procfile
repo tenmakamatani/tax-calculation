@@ -1,1 +1,1 @@
-web: vendor/bin/tax-calculation public/
+web: vendor/bin/ tax-calculation/public/
