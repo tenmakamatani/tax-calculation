@@ -9,7 +9,6 @@
   <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-  <h1>aiueo</h1>
   <section class="taxes">
     <h1 class="taxes__ttl">消費税設定の一覧</h1>
     <div class="taxes__detail">
