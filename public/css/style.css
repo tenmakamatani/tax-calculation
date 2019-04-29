@@ -1,161 +1,177 @@
-.calculate__ttl,
-.register__ttl,
-.taxes__ttl {
-  font-size: 30px;
-  text-align: center;
-  font-weight: 300;
-}
+@charset "UTF-8";
 
 * {
   margin: 0;
   padding: 0;
 }
 
-input {
-  outline: none;
-  font-size: 100%;
-  text-align: center;
-  border: solid 1px darkgrey;
+body {
+  font-family: YuGothic, "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "Hiragino Kaku Gothic Pro", "\30E1\30A4\30EA\30AA", Meiryo, "\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF", sans-serif;
 }
 
-.taxes {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.taxes__ttl {
-  margin-top: 80px;
-  margin-bottom: 30px;
-}
-
-.taxes__detail {
-  display: flex;
+.forms {
   justify-content: center;
-  margin: 0 auto;
-  max-width: 80%;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 
-.taxes__detail__element {
-  width: 33.3%;
-  border: solid 1px darkgrey;
+.forms__form {
+  width: 40%;
+  text-align: center;
+}
+
+.forms__form__ttl {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.forms__form__input {
+  width: 85%;
+  height: 43px;
+  margin: 15px auto;
+  border-radius: 12px;
+  border: solid 0.5px #9D9D9D;
+  padding-left: 17px;
+  font-size: 15px;
+}
+
+.forms__form__btn {
+  height: 38px;
+  background-color: #AFAFAF;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.forms__form__message {
+  width: 85%;
+  margin: 30px auto 0 auto;
+  text-align: left;
+  color: red;
+}
+
+.forms__form__result {
+  background-color: #F0EFEF;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 65%;
+}
+
+.list {
+  margin-top: 80px;
+}
+
+.list__ttl {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.list__children {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: 50px;
+  border-bottom: solid 1px black;
+}
+
+.list__children__date {
+  width: 50%;
+}
+
+.list__children__date__inner {
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.list__children__percent {
+  width: 25%;
+}
+
+.list__children__percent__inner {
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.list__children__operate {
+  width: 25%;
+}
+
+.list__children__operate__inner {
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.list__children__delete {
+  width: 25%;
+}
+
+.list__children__delete__form {
+  width: 100%;
   height: 50px;
   text-align: center;
-  vertical-align: middle;
 }
 
-.taxes__detail__element__head {
-  line-height: 50px;
-  font-size: 20px;
+.list__children__delete__form__button {
+  margin-top: 9px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background-color: #AFAFAF;
+  cursor: pointer;
+  color: white;
+  border: none;
+  width: 60px;
 }
 
-.taxes__detail__element__button {
-  width: 30%;
-  height: 25px;
-  margin-top: 12.5px;
+button {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  outline: none;
+  transition: 0.3s;
+  width: 80px;
 }
 
-.register {
-  width: 100%;
-  margin-bottom: 30px;
+button:hover {
+  opacity: 0.7;
 }
 
-.register__ttl {
-  margin-bottom: 30px;
+button:active {
+  box-shadow: none;
 }
 
-.register__form-container {
-  width: 100%;
-  display: inline-block;
+input {
+  outline: none;
 }
 
-.register__form-container__form {
-  margin: 0 auto;
-  max-width: 80%;
+.list__children:nth-of-type(1) {
+  border: none;
 }
 
-.register__form-container__form--date {
-  width: 33%;
-  height: 30px;
-  margin-left: 6%;
-  margin-right: 6%;
+@media screen and (min-width: 960px) {
+  .forms {
+    display: flex;
+  }
 }
 
-.register__form-container__form--percentage {
-  width: 20%;
-  height: 30px;
+@media screen and (max-width: 960px) {
+  .forms__form {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 60%;
+  }
 }
 
-.register__form-container__form--percent-chara {
-  width: 5%;
-  font-size: 20px;
-}
-
-.register__form-container__form--button {
-  margin-left: 10%;
-  width: 10%;
-  height: 30px;
-  font-size: 15px;
-}
-
-.calculate {
-  width: 100%;
-}
-
-.calculate__ttl {
-  margin-bottom: 30px;
-}
-
-.calculate__form-container {
-  width: 100%;
-  display: inline-block;
-}
-
-.calculate__form-container__form {
-  margin: 0 auto;
-  max-width: 80%;
-}
-
-.calculate__form-container__form--date {
-  width: 33%;
-  height: 30px;
-  margin-left: 6%;
-  margin-right: 6%;
-}
-
-.calculate__form-container__form--percentage {
-  width: 20%;
-  height: 30px;
-}
-
-.calculate__form-container__form--percent-chara {
-  width: 5%;
-  font-size: 20px;
-}
-
-.calculate__form-container__form--button {
-  margin-left: 10%;
-  width: 10%;
-  height: 30px;
-  font-size: 15px;
-}
-
-.calculate__result-container {
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.calculate__result-container__result {
-  width: 16.2%;
-  margin-left: 46.7%;
-  border: solid 1px darkgrey;
-  text-align: center;
-  vertical-align: middle;
-  height: 30px;
-}
-
-.calculate__result-container__result__inner {
-  line-height: 30px;
+@media screen and (max-width: 480px) {
+  .forms__form__ttl,
+  .list__ttl {
+    font-size: 30px;
+  }
 }
 
