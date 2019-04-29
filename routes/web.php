@@ -15,3 +15,7 @@ Route::get('/', 'TaxController@index');
 Route::post('/', 'TaxController@calculate');
 Route::post('/create', 'TaxController@create');
 Route::post('/delete/{id}', 'TaxController@delete');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
