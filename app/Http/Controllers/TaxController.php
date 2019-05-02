@@ -51,7 +51,9 @@ class TaxController extends Controller
         $result = round($req->money*(1+$tax->percent/100));
         return view('index', [
             'taxes' => $taxes,
-            'result' => $result
+            'result' => $result,
+            'money' => $req->money,
+            'date' => $req->date_calculate,
         ]);
     }
 }

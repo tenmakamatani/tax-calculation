@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>tax-calculation</title>
-  <link href="/css/style.css" rel="stylesheet"></link>
-  <link href="/favicon.ico" rel="shortcut icon"></link>
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/favicon.ico" rel="shortcut icon">
 </head>
 <body>
   <section class="forms">
@@ -39,8 +39,8 @@
       </div>
       @if ($result != "")
         <div class="forms__form__result">
-          <p>{{$date_calculate}}</p>
-          <p>{{$result}}</p>
+          <p>{{$date}}</p>
+          <p>{{$money."円 => ".$result."円"}}</p>
         </div>
       @endif
     </div>
